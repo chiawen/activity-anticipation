@@ -18,7 +18,7 @@ logFormatter = logging.Formatter('[%(asctime)s] %(message)s')
 rootLogger = logging.getLogger()
 rootLogger.setLevel(logging.INFO)
 
-fileHandler = logging.FileHandler('./action-prediction.log')
+fileHandler = logging.FileHandler('./activity-anticipation.log')
 fileHandler.setFormatter(logFormatter)
 rootLogger.addHandler(fileHandler)
 
