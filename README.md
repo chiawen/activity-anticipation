@@ -1,4 +1,4 @@
-# activity-anticipation
+# Activity Anticipation
 Human activity anticipation from videos using an LSTM-based model.
 ![problem statement](assets/problem_statement.png)
 
