@@ -27,10 +27,15 @@ Extract the compressed file and put `inception_v3.ckpt` into the `./inception_ch
 
 ## Usage
 First, extract features from the frames before the annotated action begins in each video:
+
 	$ python preprocessing.py
+
 Then, generate the `train_file.csv` file containing the ground\_truth label information of the dataset:
+
  	$ python generate\_video\_mapping.py
+
 To train the model with default parameters:
+
 	$ python train.py
 
 ## Performance
@@ -42,7 +47,10 @@ To train the model with default parameters:
 |kiss|28|293|20|
 <br/>
 Train the model for 15 epochs.
+
 ![loss](assets/loss.jpg)
 ![accuracy](assets/accuracy.jpg)
 
 ## Related works
+- C. Vondrick, H. Pirsiavash, and A. Torralba. Anticipating Visual Representations from Unlabeled Video. In CVPR, 2016.
+- A. Jain, A. Singh, H. S. Koppula, S. Soh, and A. Saxena. Recurrent Neural Networks for Driver Activity Anticipation via Sensory-Fusion Architecture. In ICRA, 2016.
